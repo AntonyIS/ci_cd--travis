@@ -9,10 +9,7 @@ def index():
 @app.route('/data', methods=['GET', 'POST'])
 def get_data():
     title = "Add data"
-    if request.method == 'GET':
-        message = "Welcome, add data"
-        return render_template('form.html', message=message, title=title)
-    elif request.method == 'POST':
+    if request.method == 'POST':
         username = request.form['username']
         email = request.form['email']
         password = request.form['password']
@@ -30,6 +27,8 @@ def get_data():
             }
             return render_template('form.html',message=message,title=title,data =data)
 
+    message = "Welcome, add data"
+    return render_template('form.html', message=message, title=title)
 
 if __name__ == '__main__':
     app.run(debug=True)
