@@ -30,5 +30,6 @@ def get_data():
     message = "Welcome, add data"
     return render_template('form.html', message=message, title=title)
 
+
 if __name__ == '__main__':
     app.run(debug=True)
