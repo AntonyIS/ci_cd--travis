@@ -11,5 +11,5 @@ script:
   # linting test
   - flake8
 
-after_success:
-  - sh .travis/deploy_dockerhub.sh
+#after_success:
+#  - sh .travis/deploy_dockerhub.sh
