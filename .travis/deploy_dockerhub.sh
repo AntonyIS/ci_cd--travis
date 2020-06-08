@@ -1,4 +1,4 @@
-docker login --username $DOCKER_USER --password $DOCKER_PASSWORD
+docker login --username "antonyinjila" --password "GEOgraphy001"
 if [ "$TRAVIS_BRANCH" = "master" ]; then
 TAG="latest"
 else
