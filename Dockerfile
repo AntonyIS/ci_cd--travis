@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Antony antonyshikubu@gmail.com
+MAINTAINER "antonyinjila" "antonyshikubu@gmail.com"
 RUN apt-get update -y
 RUN apt-get install -y python-pip python-dev build-essential
 COPY . /app
