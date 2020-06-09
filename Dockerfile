@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM python:slim-buster
 MAINTAINER "antonyshikubu@gmail.com"
 RUN apt-get update -y
 RUN apt-get install -y python3-pip python3-dev build-essential
