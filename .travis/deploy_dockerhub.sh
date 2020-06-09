@@ -5,5 +5,5 @@ else
 TAG="$TRAVIS_BRANCH"
 fi
 docker build -t flask:$TAG .
-#docker tag $TRAVIS_REPO_SLUG $DOCKER_REPO
-docker image push antonyinjila/flask:latest
+docker tag $TRAVIS_REPO_SLUG $DOCKER_REPO
+docker push $DOCKER_REPO
