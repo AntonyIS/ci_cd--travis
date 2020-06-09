@@ -4,6 +4,6 @@ TAG="latest"
 else
 TAG="$TRAVIS_BRANCH"
 fi
-docker build -t $TRAVIS_REPO_SLUG:$TAG .
+docker build -t $DOCKER_USER:$TAG .
 #docker tag $TRAVIS_REPO_SLUG $DOCKER_REPO
 docker push $DOCKER_REPO
