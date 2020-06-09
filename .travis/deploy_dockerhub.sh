@@ -4,6 +4,6 @@ TAG="latest"
 else
 TAG="$TRAVIS_BRANCH"
 fi
-docker build -t flask:$TAG .
-docker tag $TRAVIS_REPO_SLUG $DOCKER_REPO
+docker build -t $DOCKER_REPO .
+#docker tag $TRAVIS_REPO_SLUG $DOCKER_REPO
 docker push $DOCKER_REPO
